@@ -31,10 +31,6 @@ function App() {
     : products.filter((p)=>p.category === selectedCategory);
 
   const filteredProducts = byCategory.filter((p) => normalize(p.name).includes(normalize(searchTerm)));
-  // const filteredProducts =
-  //  selectedCategory === "Todos"""
-  //    ? products
-  //    : products.filter((product) => product.category === selectedCategory);
 
   // atualiza a média de avaliação do produto com a nova nota do usuário
   function handleRate(productId, value) {
